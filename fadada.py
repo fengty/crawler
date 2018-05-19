@@ -33,13 +33,13 @@ def getContent(url):
     req =urllib2.Request(url)  
     req.add_header("User-Agent", random_header)  
     req.add_header("GET",url)  
-    req.add_header("Host","www.fadada.com") 
+    req.add_header("Host","todo copy host inti this space")
     req.add_header("Connection","keep-alive") 
     #req.add_header("Accept-Encoding","gzip, deflate, br") 
     req.add_header('Accept-encoding', 'gzip')
     req.add_header("Upgrade-Insecure-Requests","1")
     req.add_header("Accept","text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8")
-    req.add_header("Cookie","__jsluid=058b9d7a7139d1217b8d0e9581dd9a23; gr_user_id=8196a831-234d-401b-aaf6-a7299401f132; myAccounts=17621496302; Hm_lvt_e1e828ede8f023b510da95de235d8b96=1522641691,1523264780; JSESSIONID=BFF1072EE4994664E43F72CF4CBFD917; gr_session_id_584825818a7443419d9551c1eb62014d=4748efbb-86c0-4e3a-9dad-8327bed83782; Hm_lpvt_e1e828ede8f023b510da95de235d8b96=1523277324")
+    req.add_header("Cookie","todo copy cookie into this space")
     data=urllib2.urlopen(req).read()
     data = StringIO.StringIO(data)
     gzipper = gzip.GzipFile(fileobj=data)
@@ -57,6 +57,6 @@ def Spider(url):
 
 if __name__ == '__main__':
     print "start"
-    start_url = "https://www.fadada.com/hetongmuban/detail-"
+    start_url = "todo copy url into this space"
     Spider(start_url)
     print "end"
